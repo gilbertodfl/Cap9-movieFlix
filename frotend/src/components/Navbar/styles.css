@@ -1,0 +1,60 @@
+.main-nav {
+    padding-left: 40px;
+    min-height: 70px;
+
+}
+.nav-logo-text, .nav-logo-text:hover {
+    color: #FFF;
+}
+.main-menu{
+    display: flex;
+    font-size: 18px;
+    width: 380px;
+    justify-content: space-between;
+}
+
+.main-menu a{
+    color: rgba(255,255,255, 0.5);
+}
+/*
+ a:hover indica quando passar o mouse ( evento )
+*/
+.main-menu a:hover{
+    color: #fff;
+}
+/*
+ a:active indica uma classe que eu crie. Aqui é . e não : ( doie pontos ) 
+*/
+
+.main-menu a.active{
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-login-logout{
+    display:none;
+    color: #fff
+}
+
+.nav-username{
+    display:none;
+    margin-right: 20px;
+}
+@media( min-width: 768px){
+    .nav-login-logout{
+        display:unset;
+        color: #fff;
+        margin-right: 15px;
+    }
+    
+}
+@media( min-width: 992px){
+    .nav-login-logout{
+        margin-right: 40px;
+    }
+    .nav-username{
+        display:unset;
+    }
+    
+    
+}
